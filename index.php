@@ -75,7 +75,7 @@
 				  i aktualizowana o najnowsze wytyczne MEN.
 				  </p>
 				  <p class="TXT3">
-				  Zapraszamy do zapoznania si&#281; z nasz&#261; ofert&#261; na rok szkolny 2015/2016.
+				  Zapraszamy do zapoznania si&#281; z nasz&#261; ofert&#261; na rok szkolny.
 				 </p>
 				 <p class="TXT3">Z powa&#380;aniem <br>
 				 <em>Zarz&#261;d Wydawnictwa AKSIM</em></p>
