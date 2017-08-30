@@ -682,8 +682,8 @@
 							<div class="bookTitle">ZIELONA PODRÓŻ KL."2"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_31.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_32.desc"));
+									$fd = fopen("book_desc/book_14.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_14.desc"));
 									fclose($fd);
 									echo $desc;
 								?>
