@@ -308,7 +308,7 @@
 			<td width="50%"  height="300px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/6_liczy.jpg" width="150" height="214">
+							<img class="imgClass" src="books_image/alfabet_0.jpg" width="150" height="214">
 							<br>
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
@@ -320,7 +320,7 @@
 							</form>
 						</div>
 						<div class="basketTableBookText">
-							<div class="bookTitle">SZEŚCIOLATEK LICZY</div>
+							<div class="bookTitle">Alfabet Młodego Przyrodnika</div>
 							<div class="bookDesc">
 							<?php
 									$fd = fopen("book_desc/book_7.desc", "r");
@@ -498,6 +498,40 @@
 					
 			</td>
 		</tr>
+		
+		<tr  height="100%">
+			<td width="50%"  height="400px">
+					<div class="basketTableBook">
+						<div class="basketTableBookImage">
+							<img class="imgClass" src="books_image/zielona_1.jpg" width="150" height="214">
+							<br>
+							
+							<div class="BASKET">Cena: 17 z&#322;</div>
+							<form action="koszyk.php" method="POST"> 
+								<span class="BASKET">Ilo&#347;&#263;: </span>
+								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
+								<input type="hidden" name="book_id" value="10"/>
+								<input type="hidden" name="action" value="add"/>
+								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
+							</form>
+						</div>
+						<div class="basketTableBookText">
+							<div class="bookTitle">ZIELONA PODRÓŻ KL."1"</div>
+							<div class="bookDesc">
+								<?php
+									$fd = fopen("book_desc/book_10.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_10.desc"));
+									fclose($fd);
+									echo $desc;
+								?>
+							</div>
+						</div>
+					</div>	
+			</td>
+			<td width="50%"  height="400px">	
+			</td>
+		</tr>
+		
 	</table>
 		
 	<table class="basketTableHeader">
@@ -628,6 +662,38 @@
 					</div>		
 			</td>
 		</tr>
+		<tr  height="100%">
+			<td width="50%"  height="400px">
+					<div class="basketTableBook">
+						<div class="basketTableBookImage">
+							<img class="imgClass" src="books_image/zielona_2.jpg" width="150" height="214">
+							<br>
+							
+							<div class="BASKET">Cena: 17 z&#322;</div>
+							<form action="koszyk.php" method="POST"> 
+								<span class="BASKET">Ilo&#347;&#263;: </span>
+								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
+								<input type="hidden" name="book_id" value="14"/>
+								<input type="hidden" name="action" value="add"/>
+								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
+							</form>
+						</div>
+						<div class="basketTableBookText">
+							<div class="bookTitle">ZIELONA PODRÓŻ KL."2"</div>
+							<div class="bookDesc">
+								<?php
+									$fd = fopen("book_desc/book_31.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_32.desc"));
+									fclose($fd);
+									echo $desc;
+								?>
+							</div>
+						</div>
+					</div>	
+			</td>
+			<td width="50%"  height="400px">	
+			</td>
+		</tr>
 	</table>
 	
 	<table class="basketTableHeader">
@@ -755,6 +821,39 @@
 							</div>
 						</div>
 					</div>	
+			</td>
+		</tr>
+		
+		<tr  height="100%">
+			<td width="50%"  height="400px">
+					<div class="basketTableBook">
+						<div class="basketTableBookImage">
+							<img class="imgClass" src="books_image/zielona_3.jpg" width="150" height="214">
+							<br>
+							
+							<div class="BASKET">Cena: 17 z&#322;</div>
+							<form action="koszyk.php" method="POST"> 
+								<span class="BASKET">Ilo&#347;&#263;: </span>
+								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
+								<input type="hidden" name="book_id" value="9"/>
+								<input type="hidden" name="action" value="add"/>
+								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
+							</form>
+						</div>
+						<div class="basketTableBookText">
+							<div class="bookTitle">ZIELONA PODRÓŻ KL."3"</div>
+							<div class="bookDesc">
+								<?php
+									$fd = fopen("book_desc/book_9.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_9.desc"));
+									fclose($fd);
+									echo $desc;
+								?>
+							</div>
+						</div>
+					</div>	
+			</td>
+			<td width="50%"  height="400px">	
 			</td>
 		</tr>
 	</table>
