@@ -256,7 +256,7 @@ function send_mails($imie, $nazwisko, $adres, $mail, $telefon){
 		<table class="basketTable">
 			<tbody>
 				<tr>
-					<td align="left" class="TXT4" width="100%">Wyrażam zgodę na otrzymaywanie, na moje konto poczty elektronicznej informacji handlowych wysyłanych przez wydawnictwo AKSIM.</td>
+					<td align="left" class="TXT4" width="100%">Wyrażam zgodę na otrzymywanie, na moje konto poczty elektronicznej informacji handlowych wysyłanych przez wydawnictwo AKSIM.</td>
 				</tr>
 				<tr>
 					<td align="left"><input name="agreement" type="checkbox" value="Yes"></td>
@@ -271,7 +271,7 @@ function send_mails($imie, $nazwisko, $adres, $mail, $telefon){
 			<br>WYDAWNICTWO AKSIM
 			<br>Bank PKO S.A.
 			<br>97 1240 2193 1111 0010 0740 0305
-			<br>Szczeg&#243;&#322;owe informacje na temat transakcji zostane przes&#322;ane na wskazany adres email.
+			<br>Szczeg&#243;&#322;owe informacje na temat transakcji zostan&#261; przes&#322;ane na wskazany adres email.
 		</div>
 		
 		<div class='emptyDiv1'></div>
