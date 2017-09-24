@@ -97,6 +97,12 @@
 			<img class="imgClass" src="books_image/tr_slowka1.jpg" width="100" >
 			<img class="imgClass" src="books_image/mat_to_lubie3.jpg" width="100" >
 			<img class="imgClass" src="books_image/pl_to_lubie3.jpg"  width="100" >
+			<img class="imgClass" src="books_image/zielona_3.jpg"  width="100" >
+			<img class="imgClass" src="books_image/zielona_2.jpg"  width="100" >
+			<img class="imgClass" src="books_image/zielona_1.jpg"  width="100" >
+			<img class="imgClass" src="books_image/robaczki.jpg"  width="100" >
+			<img class="imgClass" src="books_image/alfabet_0.jpg"  width="100" >
+			
 			<script>
 			$(window).load(function() {
 				$('#vortex').vortex({
