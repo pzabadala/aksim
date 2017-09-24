@@ -90,8 +90,9 @@
 			<td width="50%"  height="470px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/ks_przedszkolaka.jpg" width="150" height="214">
+							<img class="imgClass" src="books_image/robaczki.jpg" width="150" height="214">
 							<br>
+							
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
@@ -102,7 +103,7 @@
 							</form>
 						</div>
 						<div class="basketTableBookText">
-							<div class="bookTitle">KSIĄŻECZKA PRZEDSZKOLAKA</div>
+							<div class="bookTitle">Robaczki rysują szlaczki</div>
 							<div class="bookDesc">
 								<?php
 									$fd = fopen("book_desc/book_1.desc", "r");
@@ -118,33 +119,6 @@
 	
 		<tr height="100%">
 			<td width="50%"  height="470px" >
-				<div class="basketTableBook">
-						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/przed_poznaje_sw.jpg" width="150" height="214">
-							<br>
-							
-							<div class="BASKET">Cena: 17 z&#322;</div>
-							<form action="koszyk.php" method="POST"> 
-								<span class="BASKET">Ilo&#347;&#263;: </span>
-								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="2"/>
-								<input type="hidden" name="action" value="add"/>
-								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
-							</form>
-						</div>
-						<div class="basketTableBookText">
-							<div class="bookTitle">PRZEDSZKOLAK POZNAJE ŚWIAT</div>
-							<div class="bookDesc">
-								<?php
-									$fd = fopen("book_desc/book_2.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_2.desc"));
-									fclose($fd);
-									echo $desc;
-								?>
-							</div>
-							
-						</div>
-					</div>	
 			</td>
 			
 			<td width="50%"  height="470px">
@@ -187,63 +161,7 @@
 	</table>
 	
 	<table>
-		<tr height="100%">
-			<td width="50%"  height="450px">
-					<div class="basketTableBook">
-						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/sw_licz_0.jpg" width="150" height="214">
-							<br>
-							<div class="BASKET">Cena: 17 z&#322;</div>
-							<form action="koszyk.php" method="POST"> 
-								<span class="BASKET">Ilo&#347;&#263;: </span>
-								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="3"/>
-								<input type="hidden" name="action" value="add"/>
-								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
-							</form>
-						</div>
-						<div class="basketTableBookText">
-							<div class="bookTitle">ŚWIAT LICZB KL. "0"</div>
-							<div class="bookDesc">
-								<?php
-									$fd = fopen("book_desc/book_3.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_2.desc"));
-									fclose($fd);
-									echo $desc;
-								?>
-							</div>
-						</div>
-					</div>	
-			</td>
-			<td width="50%"  height="450px" >
-				<div class="basketTableBook">
-						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/mag_lit_0.jpg" width="150" height="214">
-							<br>
-							<div class="BASKET">Cena: 17 z&#322;</div>
-							<form action="koszyk.php" method="POST"> 
-								<span class="BASKET">Ilo&#347;&#263;: </span>
-								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="4"/>
-								<input type="hidden" name="action" value="add"/>
-								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
-							</form>
-						</div>
-						<div class="basketTableBookText">
-							<div class="bookTitle">MAGICZNE LITERKI KL. "0"</div>
-							<div class="bookDesc">
-								<?php
-									$fd = fopen("book_desc/book_4.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_4.desc"));
-									fclose($fd);
-									echo $desc;
-								?>
-							</div>
-							
-						</div>
-					</div>	
-			</td>
-		</tr>
+		
 		<tr>
 			<td width="50%"  height="500px">
 					<div class="basketTableBook">
@@ -310,6 +228,7 @@
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/alfabet_0.jpg" width="150" height="214">
 							<br>
+							<div class="NEW_BOOK">NOWOŚĆ</div>
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
@@ -505,7 +424,7 @@
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/zielona_1.jpg" width="150" height="214">
 							<br>
-							
+							<div class="NEW_BOOK">NOWOŚĆ</div>
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
@@ -668,7 +587,7 @@
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/zielona_2.jpg" width="150" height="214">
 							<br>
-							
+							<div class="NEW_BOOK">NOWOŚĆ</div>
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
@@ -706,6 +625,65 @@
 		<table width="100%">
 		<tr  height="100%">
 			<td width="50%"  height="350px">
+				<div class="basketTableBook">
+						<div class="basketTableBookImage">
+							<img class="imgClass" src="books_image/mat_to_lubie3.jpg" width="150" height="213">
+							<br>
+							<div class="NEW_BOOK">NOWOŚĆ</div>
+							<div class="BASKET">Cena: 17 z&#322;</div>
+							<form action="koszyk.php" method="POST"> 
+								<span class="BASKET">Ilo&#347;&#263;: </span>
+								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
+								<input type="hidden" name="book_id" value="26"/>
+								<input type="hidden" name="action" value="add"/>
+								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
+							</form>
+						</div>
+						<div class="basketTableBookText">
+							<div class="bookTitle">Matematyka? To Lubię! KL."3"</div>
+							<div class="bookDesc">
+								<?php
+									$fd = fopen("book_desc/book_26.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_26.desc"));
+									fclose($fd);
+									echo $desc;
+								?>
+							</div>
+						</div>
+					</div>	
+			</td>
+			
+			<td width="50%"  height="350px">
+					<div class="basketTableBook">
+						<div class="basketTableBookImage">
+							<img class="imgClass" src="books_image/pl_to_lubie3.jpg" width="150" height="214">
+							<br>
+							<div class="BASKET">Cena: 17 z&#322;</div>
+							<form action="koszyk.php" method="POST"> 
+								<span class="BASKET">Ilo&#347;&#263;: </span>
+								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
+								<input type="hidden" name="book_id" value="27"/>
+								<input type="hidden" name="action" value="add"/>
+								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
+							</form>
+						</div>
+						<div class="basketTableBookText">
+							<div class="bookTitle">Polski? To Lubię! KL."3"</div>
+							<div class="bookDesc">
+								<?php
+									$fd = fopen("book_desc/book_27.desc", "r");
+									$desc = fread($fd, filesize("book_desc/book_27.desc"));
+									fclose($fd);
+									echo $desc;
+								?>
+							</div>
+						</div>
+					</div>	
+			</td>	
+		</tr>
+		
+		<tr  height="100%">
+			<td width="50%"  height="350px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/spr_umiesz_3.gif" width="150" height="214">
@@ -734,65 +712,7 @@
 					</div>	
 			</td>
 			
-			<td width="50%"  height="350px">
-				<div class="basketTableBook">
-						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/mat_to_lubie3.jpg" width="150" height="213">
-							<br>
-							<div class="NEW_BOOK">NOWOŚĆ</div>
-							<div class="BASKET">Cena: 17 z&#322;</div>
-							<form action="koszyk.php" method="POST"> 
-								<span class="BASKET">Ilo&#347;&#263;: </span>
-								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="26"/>
-								<input type="hidden" name="action" value="add"/>
-								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
-							</form>
-						</div>
-						<div class="basketTableBookText">
-							<div class="bookTitle">Matematyka? To Lubię! KL."3"</div>
-							<div class="bookDesc">
-								<?php
-									$fd = fopen("book_desc/book_26.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_26.desc"));
-									fclose($fd);
-									echo $desc;
-								?>
-							</div>
-						</div>
-					</div>	
-			</td>
-		</tr>
-		
-		<tr  height="100%">
-			<td width="50%"  height="350px">
-					<div class="basketTableBook">
-						<div class="basketTableBookImage">
-							<img class="imgClass" src="books_image/pl_to_lubie3.jpg" width="150" height="214">
-							<br>
-							<div class="NEW_BOOK">NOWOŚĆ</div>
-							<div class="BASKET">Cena: 17 z&#322;</div>
-							<form action="koszyk.php" method="POST"> 
-								<span class="BASKET">Ilo&#347;&#263;: </span>
-								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="27"/>
-								<input type="hidden" name="action" value="add"/>
-								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
-							</form>
-						</div>
-						<div class="basketTableBookText">
-							<div class="bookTitle">Polski? To Lubię! KL."3"</div>
-							<div class="bookDesc">
-								<?php
-									$fd = fopen("book_desc/book_27.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_27.desc"));
-									fclose($fd);
-									echo $desc;
-								?>
-							</div>
-						</div>
-					</div>	
-			</td>
+			
 			
 			<td width="50%"  height="350px">
 				<div class="basketTableBook">
@@ -830,7 +750,7 @@
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/zielona_3.jpg" width="150" height="214">
 							<br>
-							
+							<div class="NEW_BOOK">NOWOŚĆ</div>
 							<div class="BASKET">Cena: 17 z&#322;</div>
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
