@@ -26,7 +26,7 @@
 		return 0;
 	}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>Aksim.pl - oferta</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -59,7 +59,7 @@
 	<div class="emptyDiv1"> </div>
 	
 	<table>
-			<tr height="100%">
+			<tr >
 			<td width="50%"  height="470px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
@@ -78,8 +78,8 @@
 							<div class="bookTitle">SZLACZKI PRZEDSZKOLAKA</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_23.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_23.desc"));
+									$fd = fopen("book_desc/book_23.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_23.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -106,8 +106,8 @@
 							<div class="bookTitle">Robaczki rysują szlaczki</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_1.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_1.desc"));
+									$fd = fopen("book_desc/book_1.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_1.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -139,8 +139,8 @@
 							<div class="bookTitle">ĆWICZENIA PRZEDSZKOLAKA</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_25.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_25.desc"));
+									$fd = fopen("book_desc/book_25.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_25.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -182,8 +182,8 @@
 							<div class="bookTitle">MATEMATYKA? </br>TO LUBIĘ! <br>KL. "0"</div>
 							<div class="bookDesc">
 							<?php
-									$fd = fopen("book_desc/book_5.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_5.desc"));
+									$fd = fopen("book_desc/book_5.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_5.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -211,8 +211,8 @@
 							<div class="bookTitle">POLSKI? <br> TO LUBIĘ! </br>KL. "0"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_6.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_6.desc"));
+									$fd = fopen("book_desc/book_6.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_6.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -242,8 +242,8 @@
 							<div class="bookTitle">Alfabet Młodego Przyrodnika</div>
 							<div class="bookDesc">
 							<?php
-									$fd = fopen("book_desc/book_7.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_7.desc"));
+									$fd = fopen("book_desc/book_7.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_7.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -272,8 +272,8 @@
 							<div class="bookTitle">W MAGICZNYM ŚWIECIE LICZB I LITEREK</div>
 							<div class="bookDesc">
 								<?php
-									//$fd = fopen("book_desc/book_8.desc", "r");
-									//$desc = fread($fd, filesize("book_desc/book_8.desc"));
+									//$fd = fopen("book_desc/book_8.html", "r");
+									//$desc = fread($fd, filesize("book_desc/book_8.html"));
 									//fclose($fd);
 									//echo $desc;
 								?>
@@ -315,8 +315,8 @@
 							<div class="bookTitle">MATEMATYKA? </br>TO LUBIĘ! <br>KL. "1"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_11.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_11.desc"));
+									$fd = fopen("book_desc/book_11.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_11.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -344,8 +344,8 @@
 							<div class="bookTitle">POLSKI? <br> TO LUBIĘ! </br>KL. "1"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_12.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_12.desc"));
+									$fd = fopen("book_desc/book_12.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_12.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -375,8 +375,8 @@
 							<div class="bookTitleSmall">Testy z odpowiedziami</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_24.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_24.desc"));
+									$fd = fopen("book_desc/book_24.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_24.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -403,8 +403,8 @@
 							<div class="bookTitle">Trudne słówka KL."1"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_28.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_28.desc"));
+									$fd = fopen("book_desc/book_28.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_28.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -438,8 +438,8 @@
 							<div class="bookTitle">ZIELONA PODRÓŻ KL."1"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_10.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_10.desc"));
+									$fd = fopen("book_desc/book_10.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_10.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -462,7 +462,7 @@
 	</table>
 	
 	<table width="100%">
-		<tr  height="100%">
+		<tr height="100%">
 			<td width="50%"  height="550px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
@@ -482,8 +482,8 @@
 							<div class="bookTitle">MATEMATYKA? </br>TO LUBIĘ! <br>KL. "2"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_16.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_16.desc"));
+									$fd = fopen("book_desc/book_16.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_16.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -511,8 +511,8 @@
 							<div class="bookTitle">POLSKI? <br> TO LUBIĘ! </br>KL. "2"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_17.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_17.desc"));
+									$fd = fopen("book_desc/book_17.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_17.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -542,8 +542,8 @@
 							<div class="bookTitleSmall">Testy z odpowiedziami</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_18.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_18.desc"));
+									$fd = fopen("book_desc/book_18.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_18.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -571,8 +571,8 @@
 							<div class="bookTitle">Trudne słówka KL."2"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_29.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_29.desc"));
+									$fd = fopen("book_desc/book_29.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_29.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -601,8 +601,8 @@
 							<div class="bookTitle">ZIELONA PODRÓŻ KL."2"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_14.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_14.desc"));
+									$fd = fopen("book_desc/book_14.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_14.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -624,7 +624,7 @@
 	</table>
 		<table width="100%">
 		<tr  height="100%">
-			<td width="50%"  height="350px">
+			<td width="50%"  height="450px">
 				<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/mat_to_lubie3.jpg" width="150" height="213">
@@ -643,8 +643,8 @@
 							<div class="bookTitle">Matematyka? To Lubię! KL."3"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_26.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_26.desc"));
+									$fd = fopen("book_desc/book_26.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_26.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -653,7 +653,7 @@
 					</div>	
 			</td>
 			
-			<td width="50%"  height="350px">
+			<td width="50%"  height="450px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/pl_to_lubie3.jpg" width="150" height="214">
@@ -671,8 +671,8 @@
 							<div class="bookTitle">Polski? To Lubię! KL."3"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_27.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_27.desc"));
+									$fd = fopen("book_desc/book_27.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_27.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -683,7 +683,7 @@
 		</tr>
 		
 		<tr  height="100%">
-			<td width="50%"  height="350px">
+			<td width="50%"  height="450px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/spr_umiesz_3.gif" width="150" height="214">
@@ -702,8 +702,8 @@
 							<div class="bookTitleSmall">Testy z odpowiedziami</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_21.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_21.desc"));
+									$fd = fopen("book_desc/book_21.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_21.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -714,7 +714,7 @@
 			
 			
 			
-			<td width="50%"  height="350px">
+			<td width="50%"  height="450px">
 				<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/tr_slowka3.jpg" width="150" height="214">
@@ -733,8 +733,8 @@
 							<div class="bookTitle">Trudne słówka KL."3"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_30.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_30.desc"));
+									$fd = fopen("book_desc/book_30.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_30.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -745,7 +745,7 @@
 		</tr>
 		
 		<tr  height="100%">
-			<td width="50%"  height="400px">
+			<td width="50%"  height="450px">
 					<div class="basketTableBook">
 						<div class="basketTableBookImage">
 							<img class="imgClass" src="books_image/zielona_3.jpg" width="150" height="214">
@@ -764,8 +764,8 @@
 							<div class="bookTitle">ZIELONA PODRÓŻ KL."3"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_9.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_9.desc"));
+									$fd = fopen("book_desc/book_9.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_9.html"));
 									fclose($fd);
 									echo $desc;
 								?>
@@ -807,8 +807,8 @@
 							<div class="bookTitle">ŚWIAT LICZB KL."4"</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_22.desc", "r");
-									$desc = fread($fd, filesize("book_desc/book_22.desc"));
+									$fd = fopen("book_desc/book_22.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_22.html"));
 									fclose($fd);
 									echo $desc;
 								?>
