@@ -134,13 +134,12 @@ function isBasketNotEmpty(){
 function sent_to_saler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon){
 	$error_number = 2;
 	
-	$headers  = "From: Aksim.pl\r\n"; 
-    //$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-	$headers .= "MIME-Version: 1.0\n";
-	$headers .= "Content-Type: text/html;\n";
-	$headers .= "\tcharset=\"UTF-8\"\n";
-	$headers .= "Content-Transfer-Encoding: 8bit\n\n";
-	//$headers .= "Bcc: p.zabadala@gmail.com\n";
+	$headers  = "From: Aksim.pl".PHP_EOL; 
+	$headers .= "MIME-Version: 1.0".PHP_EOL;
+	$headers .= "Content-Type: text/html".PHP_EOL;
+	//$headers .= "\tcharset=\"UTF-8\"\n";
+	$headers .= "Content-Transfer-Encoding: 8bit".PHP_EOL;
+	$headers .= "Bcc: p.zabadala@gmail.com".PHP_EOL;
 
 	
 	$wiadomosc = getTextOrderMailToSaler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon); 
