@@ -97,7 +97,7 @@
 							<form action="koszyk.php" method="POST"> 
 								<span class="BASKET">Ilo&#347;&#263;: </span>
 								<input type="text" name="books_amount"  value="1" maxlength="2" size="1"/>
-								<input type="hidden" name="book_id" value="1"/>
+								<input type="hidden" name="book_id" value="31"/>
 								<input type="hidden" name="action" value="add"/>
 								<input type="submit" action='koszyk.php' value="zam&oacute;w"/></a> 
 							</form>
@@ -106,8 +106,8 @@
 							<div class="bookTitle">Robaczki rysują szlaczki</div>
 							<div class="bookDesc">
 								<?php
-									$fd = fopen("book_desc/book_1.html", "r");
-									$desc = fread($fd, filesize("book_desc/book_1.html"));
+									$fd = fopen("book_desc/book_31.html", "r");
+									$desc = fread($fd, filesize("book_desc/book_31.html"));
 									fclose($fd);
 									echo $desc;
 								?>

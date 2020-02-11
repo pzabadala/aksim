@@ -104,7 +104,7 @@
 		<table class="basketTable">
 		<tbody>
 			<tr>
-				<td align="left" class="TXT2" width="25%">Numer telefonu:</td><td  class="TXT2" align="left" width="75%"><strong>514009306</strong></td>
+				<td align="left" class="TXT2" width="25%">Numer telefonu:</td><td  class="TXT2" align="left" width="75%"><strong>512 504 010</strong></td>
 			</tr>
 		</tbody>
 		</table>
