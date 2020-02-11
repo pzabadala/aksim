@@ -134,25 +134,44 @@ function isBasketNotEmpty(){
 function sent_to_saler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon){
 	$error_number = 2;
 	
-	$headers  = "From: Aksim.pl".PHP_EOL; 
-	$headers .= "MIME-Version: 1.0".PHP_EOL;
-	$headers .= "Content-Type: text/html".PHP_EOL;
-	//$headers .= "\tcharset=\"UTF-8\"\n";
-	$headers .= "Content-Transfer-Encoding: 8bit".PHP_EOL;
-	$headers .= "Bcc: p.zabadala@gmail.com".PHP_EOL;
+	$headers  = "From: sklep@aksim.pl\r\n";
+	//$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+	$headers .= "MIME-Version: 1.0\n";
+	$headers .= "Content-Type: text/html;\n";
+	$headers .= "\tcharset=\"UTF-8\"\n";
+	$headers .= "Content-Transfer-Encoding: 8bit\n\n";
 
 	
 	$wiadomosc = getTextOrderMailToSaler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon); 
 	$temat = "ZAMOWIENIE ZE STRONY AKSIM.PL - ".$imie." ".$nazwisko;
-	mail("aksim@vp.pl", $temat, $wiadomosc, $headers, $telefon); 
+	mail("aksim@vp.pl", $temat, $wiadomosc, $headers, $telefon);
 	/*mail send*/
 	$error_number = 1;
 	return $error_number;
 }
 
+function sent_to_technican($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon){
+    $error_number = 2;
+    
+    $headers  = "From: sklep@aksim.pl\r\n";
+    //$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+    $headers .= "MIME-Version: 1.0\n";
+    $headers .= "Content-Type: text/html;\n";
+    $headers .= "\tcharset=\"UTF-8\"\n";
+    $headers .= "Content-Transfer-Encoding: 8bit\n\n";
+    
+    
+    $wiadomosc = getTextOrderMailToSaler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon);
+    $temat = "ZAMOWIENIE ZE STRONY AKSIM.PL - ".$imie." ".$nazwisko;
+    mail("p.zabadala@gmail.com", $temat, $wiadomosc, $headers, $telefon);
+    /*mail send*/
+    $error_number = 1;
+    return $error_number;
+}
+
 function sent_to_customer($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon){
 
-	$headers  = "From: Aksim.pl\r\n"; 
+	$headers  = "From: sklep@aksim.pl\r\n"; 
     //$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	$headers .= "MIME-Version: 1.0\n";
 	$headers .= "Content-Type: text/html;\n";
@@ -171,6 +190,7 @@ function sent_to_customer($imie, $nazwisko, $adres, $mail, $basketTekst, $telefo
 function send_mails($imie, $nazwisko, $adres, $mail, $telefon){
 	if(valid_user_data($imie, $nazwisko, $adres, $mail, $telefon) == 1){
 		$basketTekst = getBasketInText();
+		sent_to_technican($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon);
 		if(sent_to_customer($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon) == 1 && sent_to_saler($imie, $nazwisko, $adres, $mail, $basketTekst, $telefon) == 1 ){
 			$_SESSION["books"] = array();
 			return 1;
